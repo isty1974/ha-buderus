@@ -143,6 +143,48 @@ def setup_platform(hass, config, add_devices, discovery_info=None):
             None,
             '/system/appliance/systemPressure'
         ],
+         'active_heating_program': [
+            'Active Heating Program',
+            None,
+            None,
+            '/heatingCircuits/hc2/activeSwitchProgram'
+         ],
+         'energy_monitoring_consumption': [
+            'Energy Monitoring Consumption',
+            None,
+            'mdi:flash',
+            '/heatSources/energyMonitoring/consumption'
+         ],
+         'system_pressure': [
+            'System pressure',
+            None,
+            'mdi:av-timer',
+            '/system/appliance/systemPressure'
+         ],
+         'totalsystem_workingtime': [
+            'System Total Workingtime',
+            None,
+            'mdi:timelapse',
+            '/system/appliance/workingTime/totalSystem'
+         ],
+         'brand': [
+            'Brand',
+            None,
+            'mdi:watermark',
+            '/system/brand'
+         ],
+         'system_bus': [
+            'System Bus',
+            None,
+            'mdi:van-utility',
+            '/system/bus'
+         ],
+         'health_status': [
+           'Health Status',
+            None,
+            'mdi:book-outline',
+            '/system/healthStatus'
+         ],
     }
 
     bridge = hass.data[DOMAIN]
